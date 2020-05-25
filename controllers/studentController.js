@@ -1,11 +1,4 @@
 const mysqlConnection = require("../data/data");
-const express = require('express');
-const app = express();
-var cors = require('cors');
-var bodyParser = require('body-parser');
-
-app.use(cors());
-app.use(bodyParser.json());
 
 module.exports = {
   getAllStudents(req, res) {
