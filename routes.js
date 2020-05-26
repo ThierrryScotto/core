@@ -7,12 +7,13 @@ app.use(cors());
 app.use(bodyParser.json());
 
 const studentController = require('./controllers/studentController')
+const utils = require("./utils/utils")
 
 app.get('/students', studentController.getAllStudents);
 app.get('/student/:id', studentController.getOneStudent)
 app.delete('/delete/:id', studentController.deleteStudent)
 app.put('/edit', studentController.editStundent)
-app.post('/register', studentController.registerStudent)
+app.post('/register', utils.checkDocument, studentController.registerStudent)
 
 app.listen(2000, (err, success) => {
   if (!err) console.log('connect');
