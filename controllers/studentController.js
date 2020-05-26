@@ -42,8 +42,8 @@ module.exports = {
      ("${student.name}","${student.email}", "${student.document}", "${student.lastName}", "${student.sex}");`
 
     mysqlConnection.query(sqlCommand,(error, results, fields )=> {
-      if (error) res.send({ error });
-      res.send(results);
+      if (error) res.send({success: false, error: "Erro ao cadastrar usuário"})
+      res.send({success: true})
     });
   }
 }
