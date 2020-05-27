@@ -1,5 +1,8 @@
 1 - Decisão da arquitetura utilizada
-Utilizei node e mysql. São ferramentas nas quais eu já utilizo a algum tempo então, a ideia era focar no aprendizado nas que ainda não havia utilizado como o Vue.
+Banco de dados mysql. 
+Back-end node.js.
+
+Foi escolhida as ferramentas acima pois são ferramentas nas quais eu já utilizo a algum tempo então, a ideia era focar no aprendizado nas que ainda não havia utilizado como o Vue.
 
 A aplicação esta dividida em pastas como explicado abaixo:
 utils - Nesta pasta contêm o arquivo utils, nele ficam as funções utilitarias como verificador de cpf.
