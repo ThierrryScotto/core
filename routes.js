@@ -15,7 +15,7 @@ app.delete('/delete/:id', studentController.deleteStudent)
 app.put('/edit', studentController.editStundent)
 app.post('/register', utils.checkDocument, studentController.registerStudent)
 
-app.listen(2000, (err, success) => {
+app.listen(process.env.PORT, (err, success) => {
   if (!err) console.log('connect');
   else console.log('error', err)
 })
